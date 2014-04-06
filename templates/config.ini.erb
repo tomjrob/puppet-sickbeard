@@ -1,0 +1,326 @@
+[General]
+config_version = <%= @general['config_version'] || '5' %>
+encryption_version = <%= @general['encryption_version'] || '0' %>
+log_dir = <%= @general['log_dir'] || 'Logs' %>
+socket_timeout = <%= @general['socket_timeout'] || '30' %>
+web_port = <%= @general['web_port'] || '8081' %>
+web_host = <%= @general['web_host'] || '0.0.0.0' %>
+web_ipv6 = <%= @general['web_ipv6'] || '0' %>
+web_log = <%= @general['web_log'] || '0' %>
+web_root = <%= @general['web_root'] || '""' %>
+web_username = <%= @general['web_username'] || '""' %>
+web_password = <%= @general['web_password'] || '""' %>
+localhost_ip = <%= @general['localhost_ip'] || '""' %>
+anon_redirect = <%= @general['anon_redirect'] || 'http://dereferer.org/?' %>
+use_api = <%= @general['use_api'] || '0' %>
+api_key = <%= @general['api_key'] || '""' %>
+enable_https = <%= @general['enable_https'] || '0' %>
+https_cert = <%= @general['https_cert'] || 'server.crt' %>
+https_key = <%= @general['https_key'] || 'server.key' %>
+use_nzbs = <%= @general['use_nzbs'] || '0' %>
+use_torrents = <%= @general['use_torrents'] || '1' %>
+nzb_method = <%= @general['nzb_method'] || 'blackhole' %>
+torrent_method = <%= @general['torrent_method'] || 'blackhole' %>
+usenet_retention = <%= @general['usenet_retention'] || '500' %>
+search_frequency = <%= @general['search_frequency'] || '40' %>
+download_propers = <%= @general['download_propers'] || '1' %>
+allow_high_priority = <%= @general['allow_high_priority'] || '1' %>
+quality_default = <%= @general['quality_default'] || '3' %>
+status_default = <%= @general['status_default'] || '5' %>
+flatten_folders_default = <%= @general['flatten_folders_default'] || '0' %>
+provider_order = <%= @general['provider_order'] || '""' %>
+version_notify = <%= @general['version_notify'] || '1' %>
+naming_strip_year = <%= @general['naming_strip_year'] || '0' %>
+naming_pattern = <%= @general['naming_pattern'] || '%SN - %Sx%0E - %EN' %>
+naming_custom_abd = <%= @general['naming_custom_abd'] || '0' %>
+naming_abd_pattern = <%= @general['naming_abd_pattern'] || '%SN - %A-D - %EN' %>
+naming_multi_ep = <%= @general['naming_multi_ep'] || '1' %>
+launch_browser = <%= @general['launch_browser'] || '1' %>
+update_shows_on_start = <%= @general['update_shows_on_start'] || '0' %>
+sort_article = <%= @general['sort_article'] || '0' %>
+use_listview = <%= @general['use_listview'] || '0' %>
+metadata_xbmc = <%= @general['metadata_xbmc'] || '0|0|0|0|0|0|0|0|0|0' %>
+metadata_xbmc_12plus = <%= @general['metadata_xbmc_12plus'] || '0|0|0|0|0|0|0|0|0|0' %>
+metadata_mediabrowser = <%= @general['metadata_mediabrowser'] || '0|0|0|0|0|0|0|0|0|0' %>
+metadata_ps3 = <%= @general['metadata_ps3'] || '0|0|0|0|0|0|0|0|0|0' %>
+metadata_wdtv = <%= @general['metadata_wdtv'] || '0|0|0|0|0|0|0|0|0|0' %>
+metadata_tivo = <%= @general['metadata_tivo'] || '0|0|0|0|0|0|0|0|0|0' %>
+metadata_mede8er = <%= @general['metadata_mede8er'] || '0|0|0|0|0|0|0|0|0|0' %>
+cache_dir = <%= @general['cache_dir'] || 'cache' %>
+root_dirs = <%= @general['root_dirs'] || '""' %>
+tv_download_dir = <%= @general['tv_download_dir'] || '""' %>
+keep_processed_dir = <%= @general['keep_processed_dir'] || '1' %>
+process_method = <%= @general['process_method'] || 'copy' %>
+move_associated_files = <%= @general['move_associated_files'] || '0' %>
+process_automatically = <%= @general['process_automatically'] || '0' %>
+unpack = <%= @general['unpack'] || '0' %>
+rename_episodes = <%= @general['rename_episodes'] || '1' %>
+create_missing_show_dirs = <%= @general['create_missing_show_dirs'] || '0' %>
+add_shows_wo_dir = <%= @general['add_shows_wo_dir'] || '0' %>
+extra_scripts = <%= @general['extra_scripts'] || '""' %>
+git_path = <%= @general['git_path'] || '""' %>
+ignore_words = <%= @general['ignore_words'] || '"german,french,core2hd,dutch,swedish,reenc,MrLss"' %>
+calendar_protected = <%= @general['calendar_protected'] || '0' %>
+[Blackhole]
+nzb_dir = <%= @blackhole['nzb_dir'] || '""' %>
+torrent_dir = <%= @blackhole['torrent_dir'] '""' %>
+[EZRSS]
+ezrss = <%= @ezrss['ezrss'] || '0' %>
+[TVTORRENTS]
+tvtorrents = <%= @tvtorrents['tvtorrents'] || '0' %>
+tvtorrents_digest = <%= @tvtorrents['tvtorrents_digest'] || '""' %>
+tvtorrents_hash = <%= @tvtorrents['tvtorrents_hash'] || '""' %>
+tvtorrents_options = <%= @tvtorrents['tvtorrents_options'] || '""' %>
+[BTN]
+btn = <%= @btn['btn'] || '0' %>
+btn_api_key = <%= @btn['btn_api_key'] || '""' %>
+btn_options = <%= @btn['btn_options'] || '""' %>
+[THEPIRATEBAY]
+thepiratebay = <%= @thepiratebay['thepiratebay'] || '1' %>
+thepiratebay_trusted = <%= @thepiratebay['thepiratebay_trusted'] || '1' %>
+thepiratebay_proxy = <%= @thepiratebay['thepiratebay_proxy'] || '0' %>
+thepiratebay_proxy_url = <%= @thepiratebay['thepiratebay_proxy_url'] || '""' %>
+thepiratebay_blacklist = <%= @thepiratebay['thepiratebay_blacklist'] || '""' %>
+thepiratebay_options = <%= @thepiratebay['thepiratebay_options'] || '""' %>
+[TORRENTLEECH]
+torrentleech = <%= @torrentleech['torrentleech'] || '0' %>
+torrentleech_username = <%= @torrentleech['torrentleech_username'] || '""' %>
+torrentleech_password = <%= @torrentleech['torrentleech_password'] || '""' %>
+torrentleech_options = <%= @torrentleech['torrentleech_options'] || '""' %>
+[IPTORRENTS]
+iptorrents = <%= @iptorrents['iptorrents'] || '0' %>
+iptorrents_username = <%= @iptorrents['iptorrents_username'] || '""' %>
+iptorrents_password = <%= @iptorrents['iptorrents_password'] || '""' %>
+iptorrents_freeleech = <%= @iptorrents['iptorrents_freeleech'] || '0' %>
+iptorrents_options = <%= @iptorrents['iptorrents_options'] || '""' %>
+[NEXTGEN]
+nextgen = <%= @nextgen['nextgen'] || '0' %>
+nextgen_username = <%= @nextgen['nextgen_username'] || '""' %>
+nextgen_password = <%= @nextgen['nextgen_password'] || '""' %>
+nextgen_options = <%= @nextgen['nextgen_options'] || '""' %>
+[KAT]
+kat = <%= @kat['kat'] || '0' %>
+kat_verified = <%= @kat['kat_verified'] || '1' %>
+kat_options = <%= @kat['kat_options'] || '""' %>
+[PUBLICHD]
+publichd = <%= @publichd['publichd'] || '0' %>
+publichd_options = <%= @publichd['publichd_options'] || '""' %>
+[SCC]
+scc = <%= @scc['scc'] || '0' %>
+scc_username = <%= @scc['scc_username'] || '""' %>
+scc_password = <%= @scc['scc_password'] || '""' %>
+scc_options = <%= @scc['scc_options'] || '""' %>
+[HDTORRENTS]
+hdtorrents = <%= @hdtorrents['hdtorrents'] || '0' %>
+hdtorrents_username = <%= @hdtorrents['hdtorrents_username'] || '""' %>
+hdtorrents_password = <%= @hdtorrents['hdtorrents_password'] || '""' %>
+hdtorrents_options = <%= @hdtorrents['hdtorrents_options'] || '""' %>
+[TORRENTDAY]
+torrentday = <%= @torrentday['torrentday'] || '0' %>
+torrentday_username = <%= @torrentday['torrentday_username'] || '""' %>
+torrentday_password = <%= @torrentday['torrentday_password'] || '""' %>
+torrentday_freeleech = <%= @torrentday['torrentday_freeleech'] || '0' %>
+torrentday_options = <%= @torrentday['torrentday_options'] || '""' %>
+[HDBITS]
+hdbits = <%= @hdbits['hdbits'] || '0' %>
+hdbits_username = <%= @hdbits['hdbits_username'] || '""' %>
+hdbits_passkey = <%= @hdbits['hdbits_passkey'] || '""' %>
+hdbits_options = <%= @hdbits['hdbits_options'] || '""' %>
+[SPEEDCD]
+speedcd = <%= @speedcd['speedcd'] || '0' %>
+speedcd_username = <%= @speedcd['speedcd_username'] || '""' %>
+speedcd_password = <%= @speedcd['speedcd_password'] || '""' %>
+speedcd_freeleech = <%= @speedcd['speedcd_freeleech'] || '0' %>
+[BinSearch]
+binsearch = <%= @binsearch['binsearch'] || '0' %>
+binsearch_max = <%= @binsearch['binsearch_max'] || '""' %>
+binsearch_alt = <%= @binsearch['binsearch_alt'] || '""' %>
+[NZBs]
+nzbs = <%= @nzbs['nzbs'] || '0' %>
+nzbs_uid = <%= @nzbs['nzbs_uid'] || '""' %>
+nzbs_hash = <%= @nzbs['nzbs_hash'] || '""' %>
+[Newzbin]
+newzbin = <%= @newzbin['newzbin'] || '0' %>
+newzbin_username = <%= @newzbin['newzbin_username'] || '""' %>
+newzbin_password = <%= @newzbin['newzbin_password'] || '""' %>
+[Womble]
+womble = <%= @womble['womble'] || '0' %>
+[omgwtfnzbs]
+omgwtfnzbs = <%= @omgwtfnzbs['omgwtfnzbs'] || '0' %>
+omgwtfnzbs_username = <%= @omgwtfnzbs['omgwtfnzbs_username'] || '""' %>
+omgwtfnzbs_apikey = <%= @omgwtfnzbs['omgwtfnzbs_apikey'] || '""' %>
+[SABnzbd]
+sab_username = <%= @sabnzbd['sab_username'] || '""' %>
+sab_password = <%= @sabnzbd['sab_password'] || '""' %>
+sab_apikey = <%= @sabnzbd['sab_apikey'] || '""' %>
+sab_category = <%= @sabnzbd['sab_category'] || 'tv' %>
+sab_host = <%= @sabnzbd['sab_host'] || '""' %>
+[NZBget]
+nzbget_username = <%= @nzbget['nzbget_username'] || 'nzbget' %>
+nzbget_password = <%= @nzbget['nzbget_password'] || 'tegbzn6789' %>
+nzbget_category = <%= @nzbget['nzbget_category'] || 'tv' %>
+nzbget_host = <%= @nzbget['nzbget_host'] || '""' %>
+nzbget_use_https = <%= @nzbget['nzbget_use_https'] || '0' %>
+[TORRENT]
+torrent_username = <%= @torrent['torrent_username'] || '""' %>
+torrent_password = <%= @torrent['torrent_password'] || '""' %>
+torrent_host = <%= @torrent['torrent_host'] || '""' %>
+torrent_path = <%= @torrent['torrent_path'] || '""' %>
+torrent_ratio = <%= @torrent['torrent_ratio'] || '""' %>
+torrent_paused = <%= @torrent['torrent_paused'] || '0' %>
+torrent_high_bandwidth = <%= @torrent['torrent_high_bandwidth'] || '0' %>
+torrent_label = <%= @torrent['torrent_label'] || '""' %>
+[XBMC]
+use_xbmc = <%= @xbmc['use_xbmc'] || '0' %>
+xbmc_notify_onsnatch = <%= @xbmc['xbmc_notify_onsnatch'] || '0' %>
+xbmc_notify_ondownload = <%= @xbmc['xbmc_notify_ondownload'] || '0' %>
+xbmc_notify_onsubtitledownload = <%= @xbmc['xbmc_notify_onsubtitledownload'] || '0' %>
+xbmc_update_library = <%= @xbmc['xbmc_update_library'] || '0' %>
+xbmc_update_full = <%= @xbmc['xbmc_update_full'] || '0' %>
+xbmc_update_onlyfirst = <%= @xbmc['xbmc_update_onlyfirst'] || '0' %>
+xbmc_host = <%= @xbmc['xbmc_host'] || '""' %>
+xbmc_username = <%= @xbmc['xbmc_username'] || '""' %>
+xbmc_password = <%= @xbmc['xbmc_password'] || '""' %>
+[Plex]
+use_plex = <%= @plex['use_plex'] || '0' %>
+plex_notify_onsnatch = <%= @plex['plex_notify_onsnatch'] || '0' %>
+plex_notify_ondownload = <%= @plex['plex_notify_ondownload'] || '0' %>
+plex_notify_onsubtitledownload = <%= @plex['plex_notify_onsubtitledownload'] || '0' %>
+plex_update_library = <%= @plex['plex_update_library'] || '0' %>
+plex_server_host = <%= @plex['plex_server_host'] || '""' %>
+plex_host = <%= @plex['plex_host'] || '""' %>
+plex_username = <%= @plex['plex_username'] || '""' %>
+plex_password = <%= @plex['plex_password'] || '""' %>
+[Growl]
+use_growl = <%= @growl['xxx'] || '0' %>
+growl_notify_onsnatch = <%= @growl['growl_notify_onsnatch'] || '0' %>
+growl_notify_ondownload = <%= @growl['growl_notify_ondownload'] || '0' %>
+growl_notify_onsubtitledownload = <%= @growl['growl_notify_onsubtitledownload'] || '0' %>
+growl_host = <%= @growl['growl_host'] || '""' %>
+growl_password = <%= @growl['growl_password'] || '""' %>
+[Prowl]
+use_prowl = <%= @prowl['use_prowl'] || '0' %>
+prowl_notify_onsnatch = <%= @prowl['prowl_notify_onsnatch'] || '0' %>
+prowl_notify_ondownload = <%= @prowl['prowl_notify_ondownload'] || '0' %>
+prowl_notify_onsubtitledownload = <%= @prowl['prowl_notify_onsubtitledownload'] || '0' %>
+prowl_api = <%= @prowl['prowl_api'] || '""' %>
+prowl_priority = <%= @prowl['prowl_priority'] || '0' %>
+[Twitter]
+use_twitter = <%= @twitter['use_twitter'] || '0' %>
+twitter_notify_onsnatch = <%= @twitter['twitter_notify_onsnatch'] || '0' %>
+twitter_notify_ondownload = <%= @twitter['twitter_notify_ondownload'] || '0' %>
+twitter_notify_onsubtitledownload = <%= @twitter['twitter_notify_onsubtitledownload'] || '0' %>
+twitter_username = <%= @twitter['twitter_username'] || '""' %>
+twitter_password = <%= @twitter['twitter_password'] || '""' %>
+twitter_prefix = <%= @twitter['twitter_prefix'] || 'Sick Beard' %>
+[Boxcar]
+use_boxcar = <%= @boxcar['use_boxcar'] || '0' %>
+boxcar_notify_onsnatch = <%= @boxcar['boxcar_notify_onsnatch'] || '0' %>
+boxcar_notify_ondownload = <%= @boxcar['boxcar_notify_ondownload'] || '0' %>
+boxcar_notify_onsubtitledownload = <%= @boxcar['boxcar_notify_onsubtitledownload'] || '0' %>
+boxcar_username = <%= @boxcar['boxcar_username'] || '""' %>
+[Pushover]
+use_pushover = <%= @pushover['use_pushover'] || '0' %>
+pushover_notify_onsnatch = <%= @pushover['pushover_notify_onsnatch'] || '0' %>
+pushover_notify_ondownload = <%= @pushover['pushover_notify_ondownload'] || '0' %>
+pushover_notify_onsubtitledownload = <%= @pushover['pushover_notify_onsubtitledownload'] || '0' %>
+pushover_userkey = <%= @pushover['pushover_userkey'] || '""' %>
+[Libnotify]
+use_libnotify = <%= @libnotify['use_libnotify'] || '0' %>
+libnotify_notify_onsnatch = <%= @libnotify['libnotify_notify_onsnatch'] || '0' %>
+libnotify_notify_ondownload = <%= @libnotify['libnotify_notify_ondownload'] || '0' %>
+libnotify_notify_onsubtitledownload = <%= @libnotify['libnotify_notify_onsubtitledownload'] || '0' %>
+[NMJ]
+use_nmj = <%= @nmj['use_nmj'] || '0' %>
+nmj_host = <%= @nmj['nmj_host'] || '""' %>
+nmj_database = <%= @nmj['nmj_database'] || '""' %>
+nmj_mount = <%= @nmj['nmj_mount'] || '""' %>
+[NMJv2]
+use_nmjv2 = <%= @nmjv2['use_nmjv2'] || '0' %>
+nmjv2_host = <%= @nmjv2['nmjv2_host'] || '""' %>
+nmjv2_database = <%= @nmjv2['nmjv2_database'] || '""' %>
+nmjv2_dbloc = <%= @nmjv2['nmjv2_dbloc'] || '""' %>
+[Synology]
+use_synoindex = <%= @synology['use_synoindex'] || '0' %>
+[SynologyNotifier]
+use_synologynotifier = <%= @synologynotifier['use_synologynotifier'] || '0' %>
+synologynotifier_notify_onsnatch = <%= @synologynotifier['synologynotifier_notify_onsnatch'] || '0' %>
+synologynotifier_notify_ondownload = <%= @synologynotifier['synologynotifier_notify_ondownload'] || '0' %>
+synologynotifier_notify_onsubtitledownload = <%= @synologynotifier['synologynotifier_notify_onsubtitledownload'] || '0' %>
+[Trakt]
+use_trakt = <%= @trakt['use_trakt'] || '0' %>
+trakt_username = <%= @trakt['trakt_username'] || '""' %>
+trakt_password = <%= @trakt['trakt_password'] || '""' %>
+trakt_api = <%= @trakt['trakt_api'] || '""' %>
+trakt_remove_watchlist = <%= @trakt['trakt_remove_watchlist'] || '0' %>
+trakt_use_watchlist = <%= @trakt['trakt_use_watchlist'] || '0' %>
+trakt_method_add = <%= @trakt['trakt_method_add'] || '0' %>
+trakt_start_paused = <%= @trakt['trakt_start_paused'] || '0' %>
+[pyTivo]
+use_pytivo = <%= @pytivo['use_pytivo'] || '0' %>
+pytivo_notify_onsnatch = <%= @pytivo['pytivo_notify_onsnatch'] || '0' %>
+pytivo_notify_ondownload = <%= @pytivo['pytivo_notify_ondownload'] || '0' %>
+pytivo_notify_onsubtitledownload = <%= @pytivo['pytivo_notify_onsubtitledownload'] || '0' %>
+pyTivo_update_library = <%= @pytivo['pyTivo_update_library'] || '0' %>
+pytivo_host = <%= @pytivo['pytivo_host'] || '""' %>
+pytivo_share_name = <%= @pytivo['pytivo_share_name'] || '""' %>
+pytivo_tivo_name = <%= @pytivo['pytivo_tivo_name'] || '""' %>
+[NMA]
+use_nma = <%= @nma['use_nma'] || '0' %>
+nma_notify_onsnatch = <%= @nma['nma_notify_onsnatch'] || '0' %>
+nma_notify_ondownload = <%= @nma['nma_notify_ondownload'] || '0' %>
+nma_notify_onsubtitledownload = <%= @nma['nma_notify_onsubtitledownload'] || '0' %>
+nma_api = <%= @nma['nma_api'] || '""' %>
+nma_priority = <%= @nma['nma_priority'] || '0' %>
+[Pushalot]
+use_pushalot = <%= @pushalot['use_pushalot'] || '0' %>
+pushalot_notify_onsnatch = <%= @pushalot['pushalot_notify_onsnatch'] || '0' %>
+pushalot_notify_ondownload = <%= @pushalot['pushalot_notify_ondownload'] || '0' %>
+pushalot_notify_onsubtitledownload = <%= @pushalot['pushalot_notify_onsubtitledownload'] || '0' %>
+pushalot_authorizationtoken = <%= @pushalot['pushalot_authorizationtoken'] || '""' %>
+[Pushbullet]
+use_pushbullet = <%= @pushbullet['use_pushbullet'] || '0' %>
+pushbullet_notify_onsnatch = <%= @pushbullet['pushbullet_notify_onsnatch'] || '0' %>
+pushbullet_notify_ondownload = <%= @pushbullet['pushbullet_notify_ondownload'] || '0' %>
+pushbullet_notify_onsubtitledownload = <%= @pushbullet['pushbullet_notify_onsubtitledownload'] || '0' %>
+pushbullet_api = <%= @pushbullet['pushbullet_api'] || '""' %>
+pushbullet_device = <%= @pushbullet['pushbullet_device'] || '""' %>
+[Email]
+use_email = <%= @email['use_email'] || '0' %>
+email_notify_onsnatch = <%= @email['email_notify_onsnatch'] || '0' %>
+email_notify_ondownload = <%= @email['email_notify_ondownload'] || '0' %>
+email_notify_onsubtitledownload = <%= @email['email_notify_onsubtitledownload'] || '0' %>
+email_host = <%= @email['email_host'] || '""' %>
+email_port = <%= @email['email_port'] || '25' %>
+email_tls = <%= @email['email_tls'] || '0' %>
+email_user = <%= @email['email_user'] || '""' %>
+email_password = <%= @email['email_password'] || '""' %>
+email_from = <%= @email['email_from'] || '""' %>
+email_list = <%= @email['email_list'] || '""' %>
+[Newznab]
+newznab_data = <%= @newznab['newznab_data'] || '""' %>
+[TorrentRss]
+torrentrss_data = <%= @torrentrss['torrentrss_data'] || '""' %>
+[GUI]
+gui_name = <%= @gui['gui_name'] || 'slick' %>
+home_layout = <%= @gui['home_layout'] || 'poster' %>
+history_layout = <%= @gui['history_layout'] || 'detailed' %>
+display_show_specials = <%= @gui['display_show_specials'] || '1' %>
+coming_eps_layout = <%= @gui['coming_eps_layout'] || 'banner' %>
+coming_eps_display_paused = <%= @gui['coming_eps_display_paused'] || '0' %>
+coming_eps_sort = <%= @gui['coming_eps_sort'] || 'date' %>
+coming_eps_missed_range = <%= @gui['coming_eps_missed_range'] || '7' %>
+date_preset = <%= @gui['date_preset'] || '%x' %>
+time_preset = <%= @gui['time_preset'] || '%I:%M:%S %p' %>
+[Subtitles]
+use_subtitles = <%= @subtitles['use_subtitles'] || '0' %>
+subtitles_languages = <%= @subtitles['subtitles_languages'] || '""' %>
+SUBTITLES_SERVICES_LIST = <%= @subtitles['SUBTITLES_SERVICES_LIST'] || '""' %>
+SUBTITLES_SERVICES_ENABLED = <%= @subtitles['SUBTITLES_SERVICES_ENABLED'] || '""' %>
+subtitles_dir = <%= @subtitles['subtitles_dir'] || '""' %>
+subtitles_default = <%= @subtitles['subtitles_default'] || '0' %>
+subtitles_history = <%= @subtitles['subtitles_history'] || '0' %>
+subtitles_finder_frequency = <%= @subtitles['subtitles_finder_frequency'] || '1' %>
+[FailedDownloads]
+use_failed_downloads = <%= @faileddownloads['use_failed_downloads'] || '0' %>
+delete_failed = <%= @faileddownloads['delete_failed'] || '0' %>

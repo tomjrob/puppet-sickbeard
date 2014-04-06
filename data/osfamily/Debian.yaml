@@ -1,0 +1,5 @@
+---
+sickbeard::package_deps:
+  - git
+sickbeard::gem_deps:
+  - cheetah
