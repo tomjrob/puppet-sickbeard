@@ -3,8 +3,8 @@ config_version = <%= @general['config_version'] || '5' %>
 encryption_version = <%= @general['encryption_version'] || '0' %>
 log_dir = <%= @general['log_dir'] || 'Logs' %>
 socket_timeout = <%= @general['socket_timeout'] || '30' %>
-web_port = <%= @general['web_port'] || '8081' %>
-web_host = <%= @general['web_host'] || '0.0.0.0' %>
+web_port = <%= @port || '8081' %>
+web_host = <%= @host || '0.0.0.0' %>
 web_ipv6 = <%= @general['web_ipv6'] || '0' %>
 web_log = <%= @general['web_log'] || '0' %>
 web_root = <%= @general['web_root'] || '""' %>
@@ -63,7 +63,7 @@ ignore_words = <%= @general['ignore_words'] || '"german,french,core2hd,dutch,swe
 calendar_protected = <%= @general['calendar_protected'] || '0' %>
 [Blackhole]
 nzb_dir = <%= @blackhole['nzb_dir'] || '""' %>
-torrent_dir = <%= @blackhole['torrent_dir'] '""' %>
+torrent_dir = <%= @blackhole['torrent_dir'] || '""' %>
 [EZRSS]
 ezrss = <%= @ezrss['ezrss'] || '0' %>
 [TVTORRENTS]
@@ -239,7 +239,7 @@ nmj_mount = <%= @nmj['nmj_mount'] || '""' %>
 use_nmjv2 = <%= @nmjv2['use_nmjv2'] || '0' %>
 nmjv2_host = <%= @nmjv2['nmjv2_host'] || '""' %>
 nmjv2_database = <%= @nmjv2['nmjv2_database'] || '""' %>
-nmjv2_dbloc = <%= @nmjv2['nmjv2_dbloc'] || '""' %>
+nmjv2_dbloc = <%= @nmjv2['nmjv2_dbloc'] || 'None' %>
 [Synology]
 use_synoindex = <%= @synology['use_synoindex'] || '0' %>
 [SynologyNotifier]
@@ -284,7 +284,7 @@ pushbullet_notify_onsnatch = <%= @pushbullet['pushbullet_notify_onsnatch'] || '0
 pushbullet_notify_ondownload = <%= @pushbullet['pushbullet_notify_ondownload'] || '0' %>
 pushbullet_notify_onsubtitledownload = <%= @pushbullet['pushbullet_notify_onsubtitledownload'] || '0' %>
 pushbullet_api = <%= @pushbullet['pushbullet_api'] || '""' %>
-pushbullet_device = <%= @pushbullet['pushbullet_device'] || '""' %>
+pushbullet_device = <%= @pushbullet['pushbullet_device'] || 'None' %>
 [Email]
 use_email = <%= @email['use_email'] || '0' %>
 email_notify_onsnatch = <%= @email['email_notify_onsnatch'] || '0' %>
@@ -298,7 +298,7 @@ email_password = <%= @email['email_password'] || '""' %>
 email_from = <%= @email['email_from'] || '""' %>
 email_list = <%= @email['email_list'] || '""' %>
 [Newznab]
-newznab_data = <%= @newznab['newznab_data'] || '""' %>
+newznab_data = "<%= @newznab['newznab_data'] || '' %>"
 [TorrentRss]
 torrentrss_data = <%= @torrentrss['torrentrss_data'] || '""' %>
 [GUI]

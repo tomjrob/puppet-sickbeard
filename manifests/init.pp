@@ -31,7 +31,7 @@ class sickbeard (
   $womble = {},
   $omgwtfnzbs = {},
   $sabnzbd = {},
-  $nzbgetn = {},
+  $nzbget = {},
   $torrent = {},
   $xbmc = {},
   $plex = {},
