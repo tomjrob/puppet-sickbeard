@@ -8,7 +8,7 @@ class sickbeard::config inherits sickbeard {
   }
   
   exec { "sb_stop":
-    command => 'cp config.ini config.ini.tmp && supervisorctl stop sickbeard && cp config.ini.tmp config.ini',
+    command => 'cp config.ini config.ini.tmp && supervisorctl stop sickbeard & cp config.ini.tmp config.ini',
     cwd => "${config_dir}",
     path => "/bin/:/usr/local/bin/",
     refreshonly => true,
