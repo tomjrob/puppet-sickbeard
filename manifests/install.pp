@@ -15,6 +15,13 @@ class sickbeard::install inherits sickbeard {
     mode   => '0644';
   }
   
+  file { ["${src_dir}/autoProcessTV",]:
+    ensure => directory,
+    owner  => "${user}",
+    group  => "${group}",
+    mode   => '0777';
+  }
+  
   # Set up Virtual Enironment, Install PIP Dependencies
   file { "${base_dir}/requirements.txt":
     ensure => present,
