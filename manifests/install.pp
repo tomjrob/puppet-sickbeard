@@ -43,7 +43,7 @@ class sickbeard::install inherits sickbeard {
   ensure   => present,
   provider => git,
   source   => "${url}",
-  revision => ThePirateBay,
+  revision => master,
   user     => "${user}",
   group    => "${group}",
   require => File["${base_dir}"];
