@@ -78,7 +78,6 @@ class sickbeard (
   anchor { 'sickbeard::begin': } ->
   class { '::sickbeard::install_deps': } ->
   class { '::sickbeard::install': } ->
-  class { '::sickbeard::config': } ~>
-  class { '::sickbeard::service': } ->
+    class { '::sickbeard::service': } ->
   anchor { 'sickbeard::end': }
   }
